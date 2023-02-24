@@ -1,0 +1,179 @@
+body{
+    background: #2f2f2f;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.encabezado__titulo{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.encabezado__sticker{
+    width: 200px;
+    height: 140px;
+}
+
+.encabezado__sticker:hover{
+    transform: scale(1.1);
+    rotate: 10deg;
+    transition: 200ms;
+}
+
+.encriptacion{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo__info{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.textArea__entrada{
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    background-color: #fffae1;
+    border-radius: 5px;
+    text-transform: lowercase;
+    height: 200px;
+}
+
+::placeholder{
+    color: #2f2f2f;
+    font-size: 10px;
+}
+.textArea__entrada:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.boton__encriptar{
+    font-family: 'Tilt Neon', cursive;
+    color: white;
+    border: none;
+    background-color: darkred;
+    border-radius: 50px 10px 10px 50px;
+    width: 200px;
+    padding: .5rem;
+    margin: 2rem;
+}
+
+.boton__encriptar:hover{
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+.boton__desencriptar{
+    font-family: 'Tilt Neon', cursive;
+    color: white;
+    border: none;
+    background-color: darkgreen;
+    border-radius: 10px 50px 50px 10px;
+    width: 200px;
+    padding: .5rem;
+    margin: 2rem;
+}
+
+.boton__desencriptar:hover{
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+
+.salida{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+}
+
+.salida__controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salida__dpad{
+    width: 200px;
+    height: 200px;
+}
+
+.salida__cpad{
+    width: 200px;
+    height: 200px;
+}
+
+
+.textArea__salida{
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    background-color: #fffae1;
+    background-image: url('../img/smile.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    text-transform: lowercase;
+    height: 200px;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+.textArea__salida:focus{
+    outline: none;
+}
+
+.seccion__copiar{
+    display: flex;
+    justify-content: center;
+}
+
+.boton__copiar{
+    font-family: 'Tilt Neon', cursive;
+    color: white;
+    border: none;
+    background-color: darkorange;
+    border-radius: 50px;
+    width: 100px;
+    padding: .5rem;
+    margin: 2rem;
+}
+
+.boton__copiar:hover{
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+
+@media screen and (max-width: 768px) {
+    .salida__controles{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .salida__cpad{
+        width: 0;
+        height: 0;
+    }
+
+    .salida__dpad{
+        width: 0;
+        height: 0;
+    }
+}

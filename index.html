@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Encriptador</h1>
+        <img class="encabezado__sticker" src="img/Nessie.svg" alt="Sticker personal">
+    </header>
+    <main>
+        <section class="encriptacion">
+            <textarea class="textArea__entrada" cols="30" rows="10" placeholder="Ingrese el texto"></textarea>
+            <div>
+                <h2 class="subtitulo__info">Solo carácteres en minusculas y sin acentos</h2>
+            </div>
+            <div class="botones">
+                <button class="boton__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida">
+            <div class="salida__controles">
+                <div>
+                    <img class="salida__dpad" src="img/dpad.png" alt="dpad">
+                </div>
+
+                <textarea class="textArea__salida" cols="20" rows="10" placeholder=""></textarea>
+                
+                <div>
+                    <img class="salida__cpad" src="img/controles.png" alt="Cpad">
+                </div>
+            </div>
+            <div class="seccion__copiar">
+                <button class="boton__copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
